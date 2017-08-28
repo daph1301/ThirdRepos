@@ -38,6 +38,7 @@
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.radBack = new System.Windows.Forms.RadioButton();
             this.chkChild = new System.Windows.Forms.CheckBox();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
@@ -119,6 +120,7 @@
             // 
             // grpSection
             // 
+            this.grpSection.Controls.Add(this.radBack);
             this.grpSection.Controls.Add(this.radBox);
             this.grpSection.Controls.Add(this.radGeneral);
             this.grpSection.Controls.Add(this.radBalcony);
@@ -139,17 +141,21 @@
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
             // 
-            // chkChild
-            // 
+
+            this.radBack.AutoSize = true;
+            this.radBack.Location = new System.Drawing.Point(26, 88);
+            this.radBack.Name = "radBack";
+            this.radBack.Size = new System.Drawing.Size(73, 17);
+            this.radBack.TabIndex = 9;
+            this.radBack.TabStop = true;
+            this.radBack.Text = "Back Stall";
             this.chkChild.AutoSize = true;
             this.chkChild.Location = new System.Drawing.Point(246, 95);
             this.chkChild.Name = "chkChild";
             this.chkChild.Size = new System.Drawing.Size(49, 17);
             this.chkChild.TabIndex = 11;
             this.chkChild.Text = "Child";
-            this.chkChild.UseVisualStyleBackColor = true;
-            // 
-            // TicketsForm
+            this.chkChild.UseVisualStyleBackColor = true;            // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,6 +190,7 @@
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
+        private System.Windows.Forms.RadioButton radBack;
         private System.Windows.Forms.CheckBox chkChild;
     }
 }
